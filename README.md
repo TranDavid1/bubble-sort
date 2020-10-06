@@ -3,6 +3,9 @@ Implementation and analysis of Bubble Sort algorithm
 
 Implementation of the algorithm is done in Java.
 
+Requirements:
+Latest version of Java
+
 Examples of execution of the program:
 * Array of 10 elements:
 
