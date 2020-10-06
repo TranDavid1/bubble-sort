@@ -11,6 +11,7 @@ Examples of execution of the program:
 
 ![Image of 100 elements](https://i.gyazo.com/fc3d4ede9142038f473f94618a07ca54.png)
 * Array of 1000 elements:
+
 ![Image of 1000 elements](https://i.gyazo.com/2499f3d6c64b726df3b8e3287f35548c.png)
 ![Image of 1000 elements p.2](https://i.gyazo.com/0df38a6332a539b34d19392dc1039d44.png)
 ![Image of 1000 elements p.3](https://i.gyazo.com/96cf010eca243e378a22cbbac38f3b7f.png)
