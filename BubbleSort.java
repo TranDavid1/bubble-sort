@@ -62,57 +62,50 @@ public class BubbleSort
         int[] array5 = new int[100000];
         int[] array6 = new int[1000000];
 
-        /* Fill the arrays with random elements with fillArray() method, print the unsorted array,
-         sort the arrays with bubbleSort() method, then print the sorted arrays */
+        /*
+        Initialize long variables to keep track of elapsed time to sort the arrays. Fill the arrays with random elements
+        with fillArray() method, sort the arrays with bubbleSort() method.
+        Attempting to sort an array of 1 million elements will cause the program to run for a few minutes.
+         */
         fillArray(array1);
-        System.out.println("Unsorted array of 10 elements:");
-        ob.printArray(array1);
+        long nano_array1_startTime = System.nanoTime();
         ob.bubbleSort(array1);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array1);
+        long nano_array1_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 10 elements: \n" + (nano_array1_endTime - nano_array1_startTime) + " ns or " + ((nano_array1_endTime - nano_array1_startTime)/1000000.0) + " ms");
         System.out.println("\n------------------------------\n");
 
         fillArray(array2);
-        System.out.println("Unsorted array of 100 elements:");
-        ob.printArray(array2);
+        long nano_array2_startTime = System.nanoTime();
         ob.bubbleSort(array2);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array2);
+        long nano_array2_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 100 elements: \n" + (nano_array2_endTime - nano_array2_startTime) + " ns or " + ((nano_array2_endTime - nano_array2_startTime)/1000000.0) + " ms");
         System.out.println("\n-----------------------------\n");
 
         fillArray(array3);
-        System.out.println("Unsorted array of 1000 elements:");
-        ob.printArray(array3);
+        long nano_array3_startTime = System.nanoTime();
         ob.bubbleSort(array3);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array3);
+        long nano_array3_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 1,000 elements: \n" + (nano_array3_endTime - nano_array3_startTime) + " ns or " + ((nano_array3_endTime - nano_array3_startTime)/1000000.0) + " ms");
         System.out.println("\n-----------------------------\n");
 
         fillArray(array4);
-        System.out.println("Unsorted array of 10000 elements:");
-        ob.printArray(array4);
+        long nano_array4_startTime = System.nanoTime();
         ob.bubbleSort(array4);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array4);
+        long nano_array4_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 10,000 elements: \n" + (nano_array4_endTime - nano_array4_startTime) + " ns or " + ((nano_array4_endTime - nano_array4_startTime)/1000000.0) + " ms");
         System.out.println("\n-----------------------------\n");
 
         fillArray(array5);
-        System.out.println("Unsorted array of 100000 elements:");
-        ob.printArray(array5);
+        long nano_array5_startTime = System.nanoTime();
         ob.bubbleSort(array5);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array5);
+        long nano_array5_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 100,000 elements: \n" + (nano_array5_endTime - nano_array5_startTime) + " ns or " + ((nano_array5_endTime - nano_array5_startTime)/1000000.0) + " ms");
         System.out.println("\n-----------------------------\n");
 
-        /*
         fillArray(array6);
-        System.out.println("Unsorted array of 1000000 elements:");
-        ob.printArray(array6);
+        long nano_array6_startTime = System.nanoTime();
         ob.bubbleSort(array6);
-        System.out.println("\nSorted array: ");
-        ob.printArray(array6);
-        System.out.println("\n-----------------------------\n");
-         */
-    }
-}   // end main
-
+        long nano_array6_endTime = System.nanoTime();
+        System.out.println("Elapsed time to sort array of 1,000,000 elements: \n" + (nano_array6_endTime - nano_array6_startTime) + " ns or " + ((nano_array6_endTime - nano_array6_startTime)/1000000.0) + " ms");
+    } // end main
+}
