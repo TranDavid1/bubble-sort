@@ -8,5 +8,5 @@ Latest version of Java
 
 Example of execution of the program:
 
-![Image of 10 elements](https://i.gyazo.com/4da2ad494d2d71df3f078d40ef713d7c.png)
+![Image of 10 elements](https://i.gyazo.com/2e31ccf7db4be0b734a33b585de1f46e.png)
 
